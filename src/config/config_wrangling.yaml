@@ -1,0 +1,139 @@
+# Configuración para el script de feature engineering (wrangling)
+# Estructura de directorios
+base_dir: "."
+data_dir: "data"
+config_dir: "config"
+
+# Datasets a procesar
+datasets:
+  train:
+    accounts_file: "accounts_train_processed.csv"  # Salida del preprocessing
+    quotes_file: "quotes_train.csv"                # Archivo original de quotes
+    output_file: "features_train.csv"              # Features finales para entrenamiento
+  
+  test:
+    accounts_file: "accounts_test_processed.csv"   # Salida del preprocessing  
+    quotes_file: "quotes_test.csv"                 # Archivo original de quotes
+    output_file: "features_test.csv"               # Features finales para test
+
+# Configuración de feature engineering
+features:
+  # Agregaciones básicas de quotes
+  quote_aggregations:
+    - "count"           # num_quotes
+    - "nunique"         # num_products_requested
+    - "sum"             # sum_premium
+    - "mean"            # avg_premium
+    - "min"             # min_premium
+    - "max"             # max_premium
+    - "std"             # std_premium (para dispersión)
+    - "skew"            # premium_skew
+  
+  # Features derivadas numéricas
+  derived_features:
+    # Ratios y proporciones
+    premium_to_revenue_ratio: true
+    revenue_per_employee: true
+    quotes_per_employee: true
+    quotes_per_million_revenue: true
+    premium_per_employee: true
+    premium_per_revenue: true
+    premium_per_quote: true
+    
+    # Transformaciones logarítmicas
+    log_annual_revenue: true
+    log_total_payroll: true
+    
+    # Interacciones entre features
+    max_x_nquotes: true      # log(max_premium * num_quotes)
+    avg_x_nproducts: true    # log(avg_premium * num_products_requested)
+  
+  # Estadísticas de diversidad y concentración
+  diversity_features:
+    carrier_diversity: true              # num_carriers / total_quotes
+    carrier_concentration: true          # max_carrier_freq / total_quotes
+    product_concentration: true          # max_product_freq / total_quotes
+    premium_ratio_max_avg: true         # max_premium / avg_premium
+  
+  # Features de dispersión de premiums
+  premium_dispersion:
+    std_premium: true
+    iqr_premium: true           # Q75 - Q25
+    premium_skewness: true
+    premium_range: true         # max - min
+
+# Configuración de encodings categóricos
+categorical_encodings:
+  # Archivo donde se guardan/cargan los encodings (relativo a config_dir)
+  encodings_file: "encodings.json"
+  
+  # Categorías a encodificar con mediana
+  categories:
+    state:
+      - premium_sum_encoded
+      - revenue_encoded
+    
+    business_structure:
+      - premium_sum_encoded  
+      - revenue_encoded
+    
+    industry:
+      - premium_sum_encoded
+      - revenue_encoded
+  
+  # Estrategia para valores faltantes después del encoding
+  fillna_strategy: "median"  # median, mean, zero
+
+# Configuración de validación
+validation:
+  # Verificar que estos archivos existan antes de procesar
+  required_input_files:
+    - "accounts_train_processed.csv"
+    - "accounts_test_processed.csv"
+    - "quotes_train.csv"
+    - "quotes_test.csv"
+  
+  # Columnas que deben existir en accounts
+  required_accounts_columns:
+    - "account_uuid"
+    - "state"
+    - "industry"
+    - "subindustry"
+    - "year_established"
+    - "annual_revenue"
+    - "total_payroll"
+    - "business_structure"
+    - "num_employees"
+  
+  # Columnas que deben existir en quotes
+  required_quotes_columns:
+    - "account_uuid"
+    - "product"
+    - "premium" 
+    - "carrier_id"
+    # Note: 'convert' solo existe en quotes_train
+
+# Configuración de logging y debug
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  show_progress: true
+  show_shape_info: true
+
+# Configuración para manejo de memoria (opcional)
+memory:
+  chunk_size: 10000      # Procesar en chunks si los datos son muy grandes
+  low_memory_mode: false # Usar dtypes más eficientes
+
+# Configuración específica por entorno
+environments:
+  development:
+    base_dir: "."
+    debug: true
+    
+  production:
+    base_dir: "/opt/data_pipeline"
+    debug: false
+    
+  testing:
+    base_dir: "./test_data"
+    debug: true

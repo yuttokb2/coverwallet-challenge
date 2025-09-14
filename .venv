@@ -1,0 +1,13 @@
+# Airflow Configuration
+AIRFLOW_UID=50000
+AIRFLOW_GID=50000
+FERNET_KEY=your_fernet_key_here
+AIRFLOW_SECRET_KEY=your_secret_key_here
+
+# Model Path
+MODEL_PATH=./model/xgboost_model.joblib
+
+# Database (if using PostgreSQL)
+POSTGRES_USER=airflow
+POSTGRES_PASSWORD=airflow
+POSTGRES_DB=airflow

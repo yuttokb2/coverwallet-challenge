@@ -1,0 +1,52 @@
+services:
+  # FastAPI Service
+  api:
+    build:
+      context: .
+      dockerfile: ./api/app/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./model:/model:ro
+      # Ajustar el volumen según la opción que elijas:
+      # Opción 1: - ./api/app:/app:ro  
+      # Opción 2: - ./api/app:/api/app:ro
+    environment:
+      - MODEL_PATH=/model/xgboost_model.joblib
+    networks:
+      - ml-network
+
+# Airflow Service
+
+  airflow:
+    image: apache/airflow:2.7.3
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./model:/opt/airflow/model
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+      - AIRFLOW__CORE__FERNET_KEY=TluxwedoQUGgy0QOd3QXOVMoWhSrBWDNtmOWpPHxuaU=
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////tmp/airflow.db
+      - _AIRFLOW_DB_UPGRADE=true
+      - _AIRFLOW_DB_INIT=true
+      - _AIRFLOW_WWW_USER_CREATE=true  
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+    networks:
+      - ml-network
+    depends_on:
+      - api
+    # ✅ Ejecutar webserver Y scheduler
+    command: >
+      bash -c "
+      airflow scheduler &
+      airflow webserver
+      "
+      
+networks:
+  ml-network:
+    driver: bridge

@@ -1,0 +1,13 @@
+data_dir: "data"
+base_dir: "."
+
+datasets:
+  train:
+    accounts_file: "accounts_train.csv"
+    quotes_file: "quotes_train.csv"
+    output_file: "accounts_train_processed.csv"
+  
+  test:
+    accounts_file: "accounts_test.csv" 
+    quotes_file: "quotes_test.csv"
+    output_file: "accounts_test_processed.csv"

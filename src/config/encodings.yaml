@@ -1,0 +1,1044 @@
+business_structure_premium_sum:
+  Corporation: 1971.075
+  Individual: 1045.0
+  Limited Liability Company: 1417.4
+  Limited Partnership: 1967.0
+  Non-Profit: 630.0
+  Not sure yet: 1495.0
+  Other: 704.0
+  Partnership: 1150.5
+  Trust: 2038.0
+business_structure_revenue:
+  Corporation: 125000.0
+  Individual: 45000.0
+  Limited Liability Company: 70000.0
+  Limited Partnership: 88700.0
+  Non-Profit: 31120.0
+  Not sure yet: 60000.0
+  Other: 40000.0
+  Partnership: 55000.0
+  Trust: 18000.0
+industry_premium_sum:
+  Administrative Services and Building Maintenance: 1000.0
+  Agriculture, Forestry, Fishing and Hunting: 1709.0
+  Construction: 2212.0
+  Consultants: 1054.75
+  Contractors: 2009.0
+  Education: 846.0
+  Finance and Insurance: 558.0
+  Food and Accommodation: 1299.5
+  Healthcare: 1000.25
+  Home Based Business: 698.0
+  Manufacturing: 735.0
+  Non Profits: 620.0
+  Other Services: 1110.0
+  Professional, Scientific and Technical Services: 1274.0
+  Real Estate: 1324.5
+  Rentals and Leasing: 885.0
+  Retail Trade: 1503.0
+  Sports, Arts, Entertainment, and Recreation: 652.0
+  Technology, Media and Telecommunications: 1975.29
+  Transportation and Warehousing: 7636.0
+  Unknown: 912.0
+  Wholesale Trade: 1346.48
+industry_revenue:
+  Administrative Services and Building Maintenance: 28000.0
+  Agriculture, Forestry, Fishing and Hunting: 100000.0
+  Construction: 85000.0
+  Consultants: 100000.0
+  Contractors: 60000.0
+  Education: 40000.0
+  Finance and Insurance: 55000.0
+  Food and Accommodation: 80000.0
+  Healthcare: 70000.0
+  Home Based Business: 48000.0
+  Manufacturing: 80000.0
+  Non Profits: 25000.0
+  Other Services: 55000.0
+  Professional, Scientific and Technical Services: 60000.0
+  Real Estate: 62500.0
+  Rentals and Leasing: 67500.0
+  Retail Trade: 60000.0
+  Sports, Arts, Entertainment, and Recreation: 30000.0
+  Technology, Media and Telecommunications: 80000.0
+  Transportation and Warehousing: 100000.0
+  Unknown: 57500.0
+  Wholesale Trade: 100000.0
+state_premium_sum:
+  Midwest: 1253.5
+  Northeast: 1498.0
+  South: 1219.0
+  West: 1283.0
+state_revenue:
+  Midwest: 50000.0
+  Northeast: 60000.0
+  South: 60000.0
+  West: 60000.0
+subindustry_premium_sum:
+  Administrative Management and General Management Consulting Services: 1046.08
+  Advertising Agencies: 2028.105
+  Agents and Managers: 850.0
+  Air-Conditioning Equipment and Supplies Merchant Wholesalers: 1986.6100000000001
+  Air-Conditioning and Refrigeration Equipment Manufacturing: 1279.62
+  Aircraft Manufacturing: 745.0
+  All Other Amusement and Recreation Industries: 846.925
+  All Other Automotive Repair and Maintenance: 1109.7649999999999
+  All Other Basic Organic Chemical Manufacturing: 521.0
+  All Other Business Support Services: 1158.0
+  All Other Consumer Goods Rental: 885.0
+  All Other General Merchandise Stores: 2489.61
+  All Other Health and Personal Care Stores: 339.0
+  All Other Home Furnishings Stores: 1930.56
+  All Other Information Services: 3726.0
+  All Other Insurance Related Activities: 1262.0
+  All Other Leather Good and Allied Product Manufacturing: 499.5
+  All Other Legal Services: 995.0
+  All Other Miscellaneous Ambulatory Health Care Services: 2066.25
+  All Other Miscellaneous Crop Farming: 1038.0
+  All Other Miscellaneous Electrical Equipment and Component Manufacturing: 8651.0
+  All Other Miscellaneous Fabricated Metal Product Manufacturing: 1122.69
+  All Other Miscellaneous Food Manufacturing: 1305.0
+  All Other Miscellaneous Manufacturing: 506.0
+  All Other Miscellaneous Schools and Instruction: 935.5
+  All Other Miscellaneous Store Retailers (except Tobacco Stores): 2447.0
+  All Other Miscellaneous Textile Product Mills: 492.0
+  All Other Miscellaneous Wood Product Manufacturing: 1430.0
+  All Other Outpatient Care Centers: 400.0
+  All Other Personal Services: 689.0
+  All Other Plastics Product Manufacturing: 710.0
+  All Other Professional, Scientific, and Technical Services: 965.5
+  All Other Publishers: 60821.0
+  All Other Rubber Product Manufacturing: 1417.26
+  All Other Specialty Food Stores: 3156.0
+  All Other Specialty Trade Contractors: 1601.0
+  All Other Support Services: 1513.0
+  All Other Telecommunications: 1222.5
+  All Other Transportation Equipment Manufacturing: 1247.1599999999999
+  All Other Travel Arrangement and Reservation Services: 400.0
+  Alumina Refining and Primary Aluminum Production: 1000.69
+  Amusement Arcades: 1075.63
+  Apparel Accessories and Other Apparel Manufacturing: 448.0
+  Appliance Repair and Maintenance: 2092.49
+  Apprenticeship Training: 1456.25
+  Architectural Services: 1246.5
+  Art Dealers: 1511.0
+  Assisted Living Facilities for the Elderly: 2131.0
+  Audio and Video Equipment Manufacturing: 352.0
+  Automotive Body, Paint, and Interior Repair and Maintenance: 1251.0
+  Automotive Glass Replacement Shops: 1218.5
+  Automotive Oil Change and Lubrication Shops: 1248.0
+  Automotive Parts and Accessories Stores: 2042.0
+  Automotive Transmission Repair: 3087.0
+  Baked Goods Stores: 2000.0
+  Barber Shops: 2026.5
+  Beauty Salons: 2019.51
+  Bed-and-Breakfast Inns: 3145.0
+  Beer and Ale Merchant Wholesalers: 8824.5
+  Beer, Wine, and Liquor Stores: 3563.0
+  Book Publishers: 527.0
+  Book Stores: 2471.255
+  Book, Periodical, and Newspaper Merchant Wholesalers: 500.0
+  Building Inspection Services: 1339.75
+  Business Associations: 911.0
+  Business to Business Electronic Markets: 1564.8049999999998
+  Cable and Other Subscription Programming: 9858.5
+  Cafeterias, Grill Buffets, and Buffets: 1278.0
+  Cane Sugar Manufacturing: 696.0
+  Car Washes: 1011.0
+  Carpet and Upholstery Cleaning Services: 1196.0
+  Caterers: 522.11
+  Cemeteries and Crematories: 296.0
+  Child Day Care Services: 709.5
+  Child and Youth Services: 850.0
+  Children's and Infants' Clothing Stores: 2457.0
+  Civic and Social Organizations: 647.0
+  Claims Adjusting: 822.0
+  Clothing Accessories Stores: 2475.61
+  Coastal and Great Lakes Freight Transportation: 16493.0
+  Coating, Engraving, and Allied Services to Manufacturers: 1500.0
+  Coffee and Tea Manufacturing: 608.5
+  Coin-Operated Laundries and Drycleaners: 1689.5149999999999
+  Collection Agencies: 1533.0
+  Colleges, Universities, and Professional Schools: 793.5
+  Commercial Bakeries: 786.0
+  Commercial Photography: 1300.0
+  Commercial Printing (except Screen and Books): 637.85
+  Commercial Screen Printing: 639.0
+  Commercial and Institutional Building Construction: 2150.675
+  Communication Equipment Repair and Maintenance: 2199.0
+  Community Food Services: 3065.0
+  Computer Facilities Management Services: 1208.0
+  Computer Systems Design Services: 1101.1
+  Computer Terminal and Other Computer Peripheral Equipment Manufacturing: 1609.0
+  Computer Training: 3672.0
+  Computer and Computer Peripheral Equipment and Software Merchant Wholesalers: 2795.5
+  Computer and Office Machine Repair and Maintenance: 1050.0
+  Confectionery Manufacturing from Purchased Chocolate: 350.0
+  Confectionery and Nut Stores: 3755.7
+  Construction Machinery Manufacturing: 618.69
+  Consumer Electronics Repair and Maintenance: 876.5
+  Consumer Lending: 2220.64
+  Convenience Stores: 1454.0
+  Convention and Trade Show Organizers: 350.0
+  Cookie and Cracker Manufacturing: 1805.5
+  Cosmetics, Beauty Supplies, and Perfume Stores: 1975.0
+  Cosmetology and Barber Schools: 583.0
+  Couriers and Express Delivery Services: 3114.0
+  Court Reporting and Stenotype Services: 350.0
+  Credit Bureaus: 937.5
+  Curtain and Linen Mills: 500.0
+  Custom Architectural Woodwork and Millwork Manufacturing: 801.175
+  Custom Computer Programming Services: 1202.0
+  Cut Stone and Stone Product Manufacturing: 6975.0
+  Cut and Sew Apparel Contractors: 661.0
+  Cutting Tool and Machine Tool Accessory Manufacturing: 1418.25
+  Cyclic Crude, Intermediate, and Gum and Wood Chemical Manufacturing: 399.0
+  Dairy Product (except Dried or Canned) Merchant Wholesalers: 398.0
+  Dance Companies: 1754.5
+  Data Processing, Hosting, and Related Services: 784.0
+  Deep Sea Freight Transportation: 7677.0
+  Dental Laboratories: 1775.025
+  Diagnostic Imaging Centers: 400.0
+  Direct Health and Medical Insurance Carriers: 500.0
+  Direct Life Insurance Carriers: 569.5
+  Direct Mail Advertising: 782.25
+  Direct Property and Casualty Insurance Carriers: 3775.0
+  Discount Department Stores: 1063.5
+  Distilleries: 6927.0
+  Document Preparation Services: 1234.0
+  Dog and Cat Food Manufacturing: 377.0
+  Doll, Toy, and Game Manufacturing: 1342.0
+  Drafting Services: 5886.0
+  Dried and Dehydrated Food Manufacturing: 550.0
+  Drinking Places (Alcoholic Beverages): 3868.42
+  Drugs and Druggists' Sundries Merchant Wholesalers: 2239.0
+  Dry, Condensed, and Evaporated Dairy Product Manufacturing: 921.0
+  Drycleaning and Laundry Services (except Coin-Operated): 1917.2849999999999
+  Drywall and Insulation Contractors: 1544.545
+  Educational Support Services: 888.0
+  Electric Lighting Fixture Manufacturing: 3344.605
+  Electrical Apparatus and Equipment Merchant Wholesalers: 1790.5
+  Electrical Contractors and Other Wiring Installation Contractors: 2135.0
+  Electronic Auctions: 778.85
+  Electronic Computer Manufacturing: 350.0
+  Electronic Shopping: 1025.0
+  Electronics Stores: 2124.39
+  Elementary and Secondary Schools: 527.0
+  Employment Placement Agencies: 529.07
+  Engineering Services: 1388.0
+  Environment, Conservation and Wildlife Organizations: 426.0
+  Environmental Consulting Services: 831.5
+  Exam Preparation and Tutoring: 798.0
+  Executive Search Services: 1150.0
+  Exterminating and Pest Control Services: 654.5
+  Facilities Support Services: 850.0
+  Family Clothing Stores: 1583.0
+  Farm Supplies Merchant Wholesalers: 1822.0
+  Farm and Garden Machinery and Equipment Merchant Wholesalers: 500.0
+  Fats and Oils Refining and Blending: 450.0
+  Fine Arts Schools: 596.0
+  Finish Carpentry Contractors: 2344.49
+  Fish and Seafood Markets: 847.0
+  Fish and Seafood Merchant Wholesalers: 689.0
+  Fitness and Recreational Sports Centers: 1228.3
+  Floor Covering Stores: 2776.08
+  Flooring Contractors: 2686.0
+  Florists: 1000.0
+  Food (Health) Supplement Stores: 1403.0
+  Food Product Machinery Manufacturing: 350.0
+  Food Service Contractors: 708.0
+  Footwear Merchant Wholesalers: 400.0
+  Footwear and Leather Goods Repair: 2729.88
+  Framing Contractors: 2547.0
+  Freight Transportation Arrangement: 9050.0
+  Fresh Fruit and Vegetable Merchant Wholesalers: 1085.09
+  Frozen Cakes, Pies, and Other Pastries Manufacturing: 528.3
+  Frozen Fruit, Juice, and Vegetable Manufacturing: 899.13
+  Frozen Specialty Food Manufacturing: 535.5
+  Fruit and Vegetable Canning: 600.0
+  Fruit and Vegetable Markets: 1025.0
+  Full-Service Restaurants: 2843.0
+  Funeral Homes and Funeral Services: 4050.8199999999997
+  Furniture Merchant Wholesalers: 3611.0
+  Furniture Stores: 4029.5
+  Gasoline Stations with Convenience Stores: 3122.5
+  General Automotive Repair: 1495.315
+  General Freight Trucking, Local: 8602.5
+  General Freight Trucking, Long-Distance, Less Than Truckload: 9897.0
+  General Freight Trucking, Long-Distance, Truckload: 10195.0
+  General Line Grocery Merchant Wholesalers: 4429.0
+  General Medical and Surgical Hospitals: 1728.045
+  General Warehousing and Storage: 1800.5
+  Geophysical Surveying and Mapping Services: 345.0
+  Gift, Novelty, and Souvenir Stores: 1941.83
+  Glass Product Manufacturing Made of Purchased Glass: 2842.0
+  Glass and Glazing Contractors: 838.86
+  Grantmaking Foundations: 3671.0
+  Graphic Design Services: 2294.285
+  Hardware Manufacturing: 1996.0
+  Hardware Merchant Wholesalers: 1424.48
+  Hardware Stores: 4080.15
+  Highway, Street, and Bridge Construction: 3832.0
+  Hobby, Toy, and Game Stores: 2312.8
+  Home Based Businesses: 698.0
+  Home Centers: 1200.0
+  Home Furnishing Merchant Wholesalers: 1670.25
+  Home Health Care Services: 2513.73
+  Home and Garden Equipment Repair and Maintenance: 693.49
+  Horses and Other Equine Production: 1709.0
+  Hosiery and Sock Mills: 583.0
+  Hotels (except Casino Hotels) and Motels: 7399.26
+  Household Appliance Stores: 2468.15
+  Household Appliances, and Consumer Electronics Merchant Wholesalers: 1503.0
+  Household Laundry Equipment Manufacturing: 649.0
+  Human Resources Consulting Services: 1875.78
+  Human Rights Organizations: 176.0
+  Ice Cream and Frozen Dessert Manufacturing: 17470.98
+  Independent Artists, Writers, and Performers: 514.375
+  Industrial Building Construction: 1080.0
+  Industrial Machinery and Equipment Merchant Wholesalers: 903.28
+  Industrial Supplies Merchant Wholesalers: 560.76
+  Industrial and Personal Service Paper Merchant Wholesalers: 953.69
+  Inland Water Freight Transportation: 482.0
+  Institutional Furniture Manufacturing: 492.0
+  Instrument Manufacturing for Testing Electricity: 350.0
+  Insurance Agencies and Brokerages: 505.0
+  Interior Design Services: 1338.5
+  Internet Publishing and Broadcasting and Web Search Portals: 2617.37
+  Investigation Services: 475.0
+  Investment Advice: 1472.0
+  Iron Foundries: 4067.0
+  Janitorial Services: 1000.0
+  Jewelry Stores: 1375.46
+  Jewelry and Silverware Manufacturing: 953.69
+  Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers: 837.5
+  Landscape Architectural Services: 1597.12
+  Landscaping Services: 1422.19
+  Language Schools: 851.0
+  Lessors of Miniwarehouses and Self-Storage Units: 1187.0
+  Lessors of Nonfinancial Intangible Assets (except Copyrighted Works): 2372.0
+  Lessors of Nonresidential Buildings (except Miniwarehouses): 2074.0
+  Lessors of Other Real Estate Property: 792.15
+  Lessors of Residential Buildings and Dwellings: 2652.0
+  Limited-Service Restaurants: 1631.0
+  Linen Supply: 3597.0
+  Local Messengers and Local Delivery: 2694.2
+  Locksmiths: 2060.0
+  Logging: 2169.0
+  Machine Shops: 955.85
+  Machine Tool Manufacturing: 541.0
+  Machinery and Equipment Repair and Maintenance: 1296.79
+  Malt Manufacturing: 4846.84
+  Manufacturing of Measurement Devices, Displays, and Controls: 371.0
+  Marinas: 876.1
+  Marketing Consulting Services: 1234.0
+  Marketing Research and Public Opinion Polling: 2207.94
+  Masonry Contractors: 1944.0
+  Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing: 414.0
+  Meat Markets: 11956.0
+  Meat and Meat Product Merchant Wholesalers: 586.25
+  Media Buying Agencies: 4812.0
+  Media Representatives: 350.0
+  Medical Laboratories: 300.0
+  Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers: 2711.0
+  Medicinal and Botanical Manufacturing: 176.0
+  Men's Clothing Stores: 9387.235
+  Men's and Boys' Clothing and Furnishings Merchant Wholesalers: 1689.0
+  "Men\u0102\x86s and Boys\u0102\x86 Cut and Sew Apparel Manufacturing": 1834.0
+  Metal Household Furniture Manufacturing: 2099.0
+  Metal Window and Door Manufacturing: 718.0
+  Miscellaneous Intermediation: 350.0
+  Mobile Food Services: 601.5
+  Mortgage and Nonmortgage Loan Brokers: 3188.07
+  Motion Picture and Video Production: 1517.395
+  Motor Vehicle Body Manufacturing: 500.0
+  Motor Vehicle Parts (Used) Merchant Wholesalers: 2541.0
+  Motor Vehicle Supplies and New Parts Merchant Wholesalers: 2831.0
+  Motor Vehicle Towing: 7428.0
+  Museums: 831.0
+  Musical Groups and Artists: 500.0
+  Musical Instrument Manufacturing: 1489.5
+  Musical Instrument and Supplies Stores: 250.0
+  Nail Salons: 2396.5
+  Navigation and Guidance System and Instrument Manufacturing: 5544.0
+  New Housing For-Sale Builders: 2605.0
+  New Multifamily Housing Construction (except For-Sale Builders): 865.0
+  New Single-Family Housing Construction (except For-Sale Builders): 2126.0
+  News Dealers and Newsstands: 475.0
+  Nonresidential Property Managers: 942.86
+  Nonupholstered Wood Household Furniture Manufacturing: 1007.5
+  Nursery, Garden Center, and Farm Supply Stores: 765.53
+  Office Administrative Services: 1915.0
+  Office Equipment Merchant Wholesalers: 4491.115
+  Offices of All Other Miscellaneous Health Practitioners: 1536.0
+  Offices of Certified Public Accountants: 1387.0
+  Offices of Chiropractors: 2861.13
+  Offices of Dentists: 1184.5
+  Offices of Lawyers: 1438.0
+  Offices of Mental Health Practitioners (except Physicians): 609.0
+  Offices of Notaries: 970.64
+  Offices of Physical, Occupational and Speech Therapists, and Audiologists: 1508.5
+  Offices of Physicians (except Mental Health Specialists): 1230.0
+  Offices of Physicians, Mental Health Specialists: 1585.0
+  Offices of Podiatrists: 1094.0
+  Offices of Real Estate Agents and Brokers: 754.5
+  Offices of Real Estate Appraisers: 922.52
+  Ophthalmic Goods Merchant Wholesalers: 3949.0
+  Ornamental and Architectural Metal Work Manufacturing: 6374.0
+  Other Accounting Services: 1158.0
+  Other Activities Related to Real Estate: 1012.0
+  Other Automotive Mechanical and Electrical Repair and Maintenance: 1359.0
+  Other Building Equipment Contractors: 3636.375
+  Other Building Finishing Contractors: 978.13
+  Other Building Material Dealers: 1975.0
+  Other Business Service Centers (including Copy Shops): 3138.0
+  Other Chemical and Allied Products Merchant Wholesalers: 509.01
+  Other Clothing Stores: 2509.01
+  Other Commercial and Service Industry Machinery Manufacturing: 1321.5
+  Other Community Housing Services: 969.0
+  Other Computer Related Services: 2302.565
+  Other Cut and Sew Apparel Manufacturing: 550.0
+  Other Direct Selling Establishments: 400.0
+  Other Electronic Parts and Equipment Merchant Wholesalers: 1000.5
+  Other Electronic and Precision Equipment Repair and Maintenance: 2093.5
+  Other Financial Vehicles: 176.0
+  Other Foundation, Structure, and Building Exterior Contractors: 805.0
+  Other Gambling Industries: 1462.0
+  Other Gasoline Stations: 7327.0
+  Other Grantmaking and Giving Services: 552.0
+  Other Grocery and Related Products Merchant Wholesalers: 625.0
+  Other Heavy and Civil Engineering Construction: 12213.03
+  Other Individual and Family Services: 860.05
+  Other Lighting Equipment Manufacturing: 350.0
+  Other Management Consulting Services: 1117.0
+  Other Metal Container Manufacturing: 4790.68
+  Other Miscellaneous Durable Goods Merchant Wholesalers: 922.26
+  Other Motion Picture and Video Industries: 707.0
+  Other Nonscheduled Air Transportation: 13640.9
+  Other Paperboard Container Manufacturing: 983.0
+  Other Performing Arts Companies: 176.0
+  Other Personal Care Services: 1058.345
+  Other Personal and Household Goods Repair and Maintenance: 1094.0
+  Other Professional Equipment and Supplies Merchant Wholesalers: 689.0
+  Other Scientific and Technical Consulting Services: 889.125
+  Other Services Related to Advertising: 448.0
+  Other Services to Buildings and Dwellings: 990.0
+  Other Snack Food Manufacturing: 1428.5
+  Other Social Advocacy Organizations: 400.0
+  Other Specialized Design Services: 2747.0
+  Other Spectator Sports: 632.81
+  Other Support Activities for Road Transportation: 1893.28
+  Other Technical and Trade Schools: 851.0
+  Other Warehousing and Storage: 350.0
+  Other Waste Collection: 4720.75
+  Outpatient Mental Health and Substance Abuse Centers: 1089.0
+  Packaged Frozen Food Merchant Wholesalers: 702.69
+  Packaging and Labeling Services: 1332.0
+  Painting and Wall Covering Contractors: 1832.0
+  Parking Lots and Garages: 953.5
+  Passenger Car Rental: 1013.05
+  Payroll Services: 463.0
+  Perishable Prepared Food Manufacturing: 350.0
+  Pet Care (except Veterinary) Services: 1284.0
+  Pet and Pet Supplies Stores: 2002.5
+  Pharmacies and Drug Stores: 1349.205
+  Photofinishing Laboratories (except One-Hour): 371.0
+  Photography Studios, Portrait: 1475.68
+  Plastics Bottle Manufacturing: 1503.25
+  Plastics Material and Resin Manufacturing: 2218.5
+  Plastics Plumbing Fixture Manufacturing: 350.0
+  Plate Work Manufacturing: 814.0
+  Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers: 5952.0
+  Plumbing, Heating, and Air-Conditioning Contractors: 2936.0
+  Political Organizations: 475.0
+  Poured Concrete Foundation and Structure Contractors: 3496.0
+  Power and Communication Line and Related Structures Construction: 1719.0
+  Prefabricated Wood Building Manufacturing: 529.0
+  Printed Circuit Assembly (Electronic Assembly) Manufacturing: 350.0
+  Printing and Writing Paper Merchant Wholesalers: 1225.0
+  Private Households: 617.0
+  Process, Physical Distribution, and Logistics Consulting Services: 774.26
+  Professional Employer Organizations: 1354.0
+  Professional Organizations: 3172.0
+  Professional and Management Development Training: 1352.5
+  Promoters of Performing Arts, Sports, and Similar Events with Facilities: 600.0
+  Promoters of Performing Arts, Sports, and Similar Events without Facilities: 577.745
+  Public Relations Agencies: 335.0
+  Recreational Goods Rental: 4100.5
+  Recreational and Vacation Camps (except Campgrounds): 928.25
+  Recyclable Material Merchant Wholesalers: 779.0
+  Religious Organizations: 648.0
+  Remediation Services: 20821.0
+  Research and Development (other than Biotechnology): 1858.0
+  Research and Development in Biotechnology: 728.0
+  Residential Electric Lighting Fixture Manufacturing: 1438.87
+  Residential Property Managers: 1030.0
+  Residential Remodelers: 1650.0
+  Retail Bakeries: 2822.0
+  Reupholstery and Furniture Repair: 500.0
+  Roofing Contractors: 3369.44
+  Sales Financing: 598.0
+  Satellite Telecommunications: 5180.0
+  Saw Blade and Handtool Manufacturing: 1306.0
+  Sawmill, Woodworking, and Paper Machinery Manufacturing: 414.0
+  Security Guards and Patrol Services: 504.615
+  Security Systems Services (except Locksmiths): 1560.0
+  Septic Tank and Related Services: 936.0
+  Service Establishment Equipment and Supplies Merchant Wholesalers: 1640.02
+  Services for the Elderly and Persons with Disabilities: 1344.0
+  Sewing, Needlework, and Piece Goods Stores: 975.0
+  Sheep Farming: 4342.0
+  Sheet Metal Work Manufacturing: 3099.23
+  Shoe Stores: 2949.0
+  Showcase, Partition, Shelving, and Locker Manufacturing: 928.5
+  Siding Contractors: 3492.0
+  Sign Manufacturing: 1145.5
+  Site Preparation Contractors: 2186.0
+  Snack and Nonalcoholic Beverage Bars: 1132.4650000000001
+  Soap and Other Detergent Manufacturing: 538.0
+  Software Publishers: 3118.0
+  Software and Other Prerecorded Compact Disc, Tape, and Record Reproducing: 1715.05
+  Soil Preparation, Planting, and Cultivating: 950.0
+  Solid Waste Collection: 1037.52
+  Sound Recording Studios: 915.0
+  Specialized Freight (except Used Goods) Trucking, Local: 3907.0
+  Specialized Freight (except Used Goods) Trucking, Long-Distance: 11021.0
+  Specialty (except Psychiatric and Substance Abuse) Hospitals: 550.0
+  Sporting Goods Stores: 2433.855
+  Sporting and Recreational Goods and Supplies Merchant Wholesalers: 812.5
+  Sports Teams and Clubs: 500.0
+  Sports and Recreation Instruction: 350.0
+  Stationery and Office Supplies Merchant Wholesalers: 1085.06
+  Steel Foundries (except Investment): 1972.28
+  Structural Steel and Precast Concrete Contractors: 8417.2
+  Supermarkets and Other Grocery (except Convenience) Stores: 2939.0
+  Surface Active Agent Manufacturing: 3410.0
+  Surveying and Mapping (except Geophysical) Services: 500.0
+  Tax Preparation Services: 862.14
+  Telemarketing Bureaus and Other Contact Centers: 960.72
+  Teleproduction and Other Postproduction Services: 900.0
+  Television Broadcasting: 1367.0
+  Temporary Help Services: 1154.0
+  Testing Laboratories: 1422.5
+  Theater Companies and Dinner Theaters: 647.3
+  Tile and Terrazzo Contractors: 2315.0
+  Tire Dealers: 1773.0
+  Tire and Tube Merchant Wholesalers: 2390.0
+  Title Abstract and Settlement Offices: 940.0
+  Tobacco Stores: 962.52
+  Toilet Preparation Manufacturing: 922.0
+  Tour Operators: 792.0
+  Toy and Hobby Goods and Supplies Merchant Wholesalers: 3000.08
+  Translation and Interpretation Services: 866.0
+  Travel Agencies: 900.0
+  Truck Trailer Manufacturing: 2152.0
+  Trust, Fiduciary, and Custody Activities: 583.0
+  Unknown: 912.0
+  Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing: 2118.0
+  Upholstered Household Furniture Manufacturing: 692.0
+  Used Household and Office Goods Moving: 4438.0
+  Used Merchandise Stores: 962.25
+  Vending Machine Operators: 703.0
+  Veterinary Services: 494.0
+  Vocational Rehabilitation Services: 346.0
+  Voluntary Health Organizations: 448.0
+  Water and Sewer Line and Related Structures Construction: 1201.0
+  Welding and Soldering Equipment Manufacturing: 3413.0
+  Window Treatment Stores: 505.0
+  Wine and Distilled Alcoholic Beverage Merchant Wholesalers: 1534.28
+  Wineries: 1137.0
+  Wired Telecommunications Carriers: 7963.0
+  Wireless Telecommunications Carriers (except Satellite): 3355.19
+  Women's Clothing Stores: 2657.61
+  Women's Handbag and Purse Manufacturing: 373.0
+  Women's, Children's, and Infants' Clothing and Accessories Merchant Wholesalers: 1414.65
+  "Women\u0102\x86s, Girls\u0102\x86, and Infants\u0102\x86 Cut and Sew Apparel Manufacturing": 2721.34
+  Wood Container and Pallet Manufacturing: 2275.0
+  Wood Kitchen Cabinet and Countertop Manufacturing: 692.0
+  Wood Office Furniture Manufacturing: 512.0
+  Wood Preservation: 524.0
+  Wood Window and Door Manufacturing: 17900.0
+subindustry_revenue:
+  Administrative Management and General Management Consulting Services: 100000.0
+  Advertising Agencies: 325000.0
+  Agents and Managers: 40000.0
+  Air-Conditioning Equipment and Supplies Merchant Wholesalers: 100000.0
+  Air-Conditioning and Refrigeration Equipment Manufacturing: 30000.0
+  Aircraft Manufacturing: 1.0
+  All Other Amusement and Recreation Industries: 24100.0
+  All Other Automotive Repair and Maintenance: 50000.0
+  All Other Basic Organic Chemical Manufacturing: 12000.0
+  All Other Business Support Services: 80000.0
+  All Other Consumer Goods Rental: 55000.0
+  All Other General Merchandise Stores: 75000.0
+  All Other Health and Personal Care Stores: 54000.0
+  All Other Home Furnishings Stores: 100000.0
+  All Other Information Services: 475000.0
+  All Other Insurance Related Activities: 37500.0
+  All Other Leather Good and Allied Product Manufacturing: 205000.0
+  All Other Legal Services: 40000.0
+  All Other Miscellaneous Ambulatory Health Care Services: 150000.0
+  All Other Miscellaneous Crop Farming: 16000.0
+  All Other Miscellaneous Electrical Equipment and Component Manufacturing: 260000.0
+  All Other Miscellaneous Fabricated Metal Product Manufacturing: 100000.0
+  All Other Miscellaneous Food Manufacturing: 200000.0
+  All Other Miscellaneous Manufacturing: 37500.0
+  All Other Miscellaneous Schools and Instruction: 55000.0
+  All Other Miscellaneous Store Retailers (except Tobacco Stores): 200000.0
+  All Other Miscellaneous Textile Product Mills: 100000.0
+  All Other Miscellaneous Wood Product Manufacturing: 40000.0
+  All Other Outpatient Care Centers: 36000.0
+  All Other Personal Services: 40000.0
+  All Other Plastics Product Manufacturing: 130000.0
+  All Other Professional, Scientific, and Technical Services: 95000.0
+  All Other Publishers: 13000000.0
+  All Other Rubber Product Manufacturing: 145000.0
+  All Other Specialty Food Stores: 2000000.0
+  All Other Specialty Trade Contractors: 60000.0
+  All Other Support Services: 75000.0
+  All Other Telecommunications: 47500.0
+  All Other Transportation Equipment Manufacturing: 20000.0
+  All Other Travel Arrangement and Reservation Services: 5000.0
+  Alumina Refining and Primary Aluminum Production: 100000.0
+  Amusement Arcades: 60000.0
+  Apparel Accessories and Other Apparel Manufacturing: 50000.0
+  Appliance Repair and Maintenance: 62500.0
+  Apprenticeship Training: 169500.0
+  Architectural Services: 80000.0
+  Art Dealers: 50000.0
+  Assisted Living Facilities for the Elderly: 170000.0
+  Audio and Video Equipment Manufacturing: 80000.0
+  Automotive Body, Paint, and Interior Repair and Maintenance: 90000.0
+  Automotive Glass Replacement Shops: 97500.0
+  Automotive Oil Change and Lubrication Shops: 60000.0
+  Automotive Parts and Accessories Stores: 75000.0
+  Automotive Transmission Repair: 100000.0
+  Baked Goods Stores: 72000.0
+  Barber Shops: 40000.0
+  Beauty Salons: 45000.0
+  Bed-and-Breakfast Inns: 30000.0
+  Beer and Ale Merchant Wholesalers: 250000.0
+  Beer, Wine, and Liquor Stores: 500000.0
+  Book Publishers: 31000.0
+  Book Stores: 45000.0
+  Book, Periodical, and Newspaper Merchant Wholesalers: 50000.0
+  Building Inspection Services: 40000.0
+  Business Associations: 160000.0
+  Business to Business Electronic Markets: 55000.0
+  Cable and Other Subscription Programming: 387500.0
+  Cafeterias, Grill Buffets, and Buffets: 80000.0
+  Cane Sugar Manufacturing: 70000.0
+  Car Washes: 40000.0
+  Carpet and Upholstery Cleaning Services: 40000.0
+  Caterers: 30000.0
+  Cemeteries and Crematories: 100000.0
+  Child Day Care Services: 50000.0
+  Child and Youth Services: 25000.0
+  Children's and Infants' Clothing Stores: 40000.0
+  Civic and Social Organizations: 45000.0
+  Claims Adjusting: 87500.0
+  Clothing Accessories Stores: 45000.0
+  Coastal and Great Lakes Freight Transportation: 100000.0
+  Coating, Engraving, and Allied Services to Manufacturers: 100000.0
+  Coffee and Tea Manufacturing: 260000.0
+  Coin-Operated Laundries and Drycleaners: 87500.0
+  Collection Agencies: 90000.0
+  Colleges, Universities, and Professional Schools: 135000.0
+  Commercial Bakeries: 80000.0
+  Commercial Photography: 35000.0
+  Commercial Printing (except Screen and Books): 87500.0
+  Commercial Screen Printing: 87500.0
+  Commercial and Institutional Building Construction: 80000.0
+  Communication Equipment Repair and Maintenance: 100000.0
+  Community Food Services: 0.0
+  Computer Facilities Management Services: 462500.0
+  Computer Systems Design Services: 120000.0
+  Computer Terminal and Other Computer Peripheral Equipment Manufacturing: 500000.0
+  Computer Training: 3500000.0
+  Computer and Computer Peripheral Equipment and Software Merchant Wholesalers: 680000.0
+  Computer and Office Machine Repair and Maintenance: 75000.0
+  Confectionery Manufacturing from Purchased Chocolate: 2400.0
+  Confectionery and Nut Stores: 390000.0
+  Construction Machinery Manufacturing: 20000.0
+  Consumer Electronics Repair and Maintenance: 125000.0
+  Consumer Lending: 150000.0
+  Convenience Stores: 100000.0
+  Convention and Trade Show Organizers: 200000.0
+  Cookie and Cracker Manufacturing: 139000.0
+  Cosmetics, Beauty Supplies, and Perfume Stores: 55000.0
+  Cosmetology and Barber Schools: 113000.0
+  Couriers and Express Delivery Services: 50000.0
+  Court Reporting and Stenotype Services: 100000.0
+  Credit Bureaus: 40000.0
+  Curtain and Linen Mills: 100000.0
+  Custom Architectural Woodwork and Millwork Manufacturing: 55000.0
+  Custom Computer Programming Services: 115000.0
+  Cut Stone and Stone Product Manufacturing: 200000.0
+  Cut and Sew Apparel Contractors: 20000.0
+  Cutting Tool and Machine Tool Accessory Manufacturing: 200000.0
+  Cyclic Crude, Intermediate, and Gum and Wood Chemical Manufacturing: 300000.0
+  Dairy Product (except Dried or Canned) Merchant Wholesalers: 50000.0
+  Dance Companies: 55000.0
+  Data Processing, Hosting, and Related Services: 100000.0
+  Deep Sea Freight Transportation: 100000.0
+  Dental Laboratories: 187500.0
+  Diagnostic Imaging Centers: 35000.0
+  Direct Health and Medical Insurance Carriers: 60000.0
+  Direct Life Insurance Carriers: 51000.0
+  Direct Mail Advertising: 20000.0
+  Direct Property and Casualty Insurance Carriers: 520000.0
+  Discount Department Stores: 262500.0
+  Distilleries: 350000.0
+  Document Preparation Services: 10000.0
+  Dog and Cat Food Manufacturing: 32500.0
+  Doll, Toy, and Game Manufacturing: 1650000.0
+  Drafting Services: 120000.0
+  Dried and Dehydrated Food Manufacturing: 12000.0
+  Drinking Places (Alcoholic Beverages): 100000.0
+  Drugs and Druggists' Sundries Merchant Wholesalers: 150000.0
+  Dry, Condensed, and Evaporated Dairy Product Manufacturing: 50000.0
+  Drycleaning and Laundry Services (except Coin-Operated): 77000.0
+  Drywall and Insulation Contractors: 40000.0
+  Educational Support Services: 62500.0
+  Electric Lighting Fixture Manufacturing: 1045000.0
+  Electrical Apparatus and Equipment Merchant Wholesalers: 650000.0
+  Electrical Contractors and Other Wiring Installation Contractors: 75000.0
+  Electronic Auctions: 10000.0
+  Electronic Computer Manufacturing: 750000.0
+  Electronic Shopping: 100000.0
+  Electronics Stores: 70000.0
+  Elementary and Secondary Schools: 55000.0
+  Employment Placement Agencies: 90000.0
+  Engineering Services: 75000.0
+  Environment, Conservation and Wildlife Organizations: 600000.0
+  Environmental Consulting Services: 55000.0
+  Exam Preparation and Tutoring: 35000.0
+  Executive Search Services: 525000.0
+  Exterminating and Pest Control Services: 24500.0
+  Facilities Support Services: 20000.0
+  Family Clothing Stores: 80000.0
+  Farm Supplies Merchant Wholesalers: 1000000.0
+  Farm and Garden Machinery and Equipment Merchant Wholesalers: 40000.0
+  Fats and Oils Refining and Blending: 30000.0
+  Fine Arts Schools: 11000.0
+  Finish Carpentry Contractors: 60000.0
+  Fish and Seafood Markets: 50000.0
+  Fish and Seafood Merchant Wholesalers: 150000.0
+  Fitness and Recreational Sports Centers: 50000.0
+  Floor Covering Stores: 60000.0
+  Flooring Contractors: 60000.0
+  Florists: 10000.0
+  Food (Health) Supplement Stores: 235000.0
+  Food Product Machinery Manufacturing: 100000.0
+  Food Service Contractors: 18000.0
+  Footwear Merchant Wholesalers: 30000.0
+  Footwear and Leather Goods Repair: 75000.0
+  Framing Contractors: 84350.0
+  Freight Transportation Arrangement: 75000.0
+  Fresh Fruit and Vegetable Merchant Wholesalers: 95000.0
+  Frozen Cakes, Pies, and Other Pastries Manufacturing: 150000.0
+  Frozen Fruit, Juice, and Vegetable Manufacturing: 40000.0
+  Frozen Specialty Food Manufacturing: 20000.0
+  Fruit and Vegetable Canning: 50000.0
+  Fruit and Vegetable Markets: 100000.0
+  Full-Service Restaurants: 240000.0
+  Funeral Homes and Funeral Services: 50000.0
+  Furniture Merchant Wholesalers: 90000.0
+  Furniture Stores: 165000.0
+  Gasoline Stations with Convenience Stores: 402500.0
+  General Automotive Repair: 87500.0
+  General Freight Trucking, Local: 100000.0
+  General Freight Trucking, Long-Distance, Less Than Truckload: 87500.0
+  General Freight Trucking, Long-Distance, Truckload: 150000.0
+  General Line Grocery Merchant Wholesalers: 60000.0
+  General Medical and Surgical Hospitals: 755000.0
+  General Warehousing and Storage: 150000.0
+  Geophysical Surveying and Mapping Services: 60000.0
+  Gift, Novelty, and Souvenir Stores: 65000.0
+  Glass Product Manufacturing Made of Purchased Glass: 2000000.0
+  Glass and Glazing Contractors: 100000.0
+  Grantmaking Foundations: 100000.0
+  Graphic Design Services: 49000.0
+  Hardware Manufacturing: 100000.0
+  Hardware Merchant Wholesalers: 225000.0
+  Hardware Stores: 97500.0
+  Highway, Street, and Bridge Construction: 100000.0
+  Hobby, Toy, and Game Stores: 120000.0
+  Home Based Businesses: 48000.0
+  Home Centers: 50000.0
+  Home Furnishing Merchant Wholesalers: 200000.0
+  Home Health Care Services: 150000.0
+  Home and Garden Equipment Repair and Maintenance: 10000.0
+  Horses and Other Equine Production: 65000.0
+  Hosiery and Sock Mills: 220000.0
+  Hotels (except Casino Hotels) and Motels: 165000.0
+  Household Appliance Stores: 75000.0
+  Household Appliances, and Consumer Electronics Merchant Wholesalers: 250000.0
+  Household Laundry Equipment Manufacturing: 75000.0
+  Human Resources Consulting Services: 195000.0
+  Human Rights Organizations: 7000000.0
+  Ice Cream and Frozen Dessert Manufacturing: 250000.0
+  Independent Artists, Writers, and Performers: 30000.0
+  Industrial Building Construction: 100000.0
+  Industrial Machinery and Equipment Merchant Wholesalers: 400000.0
+  Industrial Supplies Merchant Wholesalers: 100000.0
+  Industrial and Personal Service Paper Merchant Wholesalers: 1000000.0
+  Inland Water Freight Transportation: 80000.0
+  Institutional Furniture Manufacturing: 40000.0
+  Instrument Manufacturing for Testing Electricity: 140000.0
+  Insurance Agencies and Brokerages: 50000.0
+  Interior Design Services: 70000.0
+  Internet Publishing and Broadcasting and Web Search Portals: 195000.0
+  Investigation Services: 32500.0
+  Investment Advice: 245000.0
+  Iron Foundries: 1000000.0
+  Janitorial Services: 25000.0
+  Jewelry Stores: 200000.0
+  Jewelry and Silverware Manufacturing: 20000.0
+  Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers: 110000.0
+  Landscape Architectural Services: 35000.0
+  Landscaping Services: 35000.0
+  Language Schools: 5000.0
+  Lessors of Miniwarehouses and Self-Storage Units: 0.0
+  Lessors of Nonfinancial Intangible Assets (except Copyrighted Works): 100000.0
+  Lessors of Nonresidential Buildings (except Miniwarehouses): 96000.0
+  Lessors of Other Real Estate Property: 15000.0
+  Lessors of Residential Buildings and Dwellings: 30000.0
+  Limited-Service Restaurants: 102000.0
+  Linen Supply: 500000.0
+  Local Messengers and Local Delivery: 100000.0
+  Locksmiths: 47500.0
+  Logging: 250000.0
+  Machine Shops: 100000.0
+  Machine Tool Manufacturing: 60000.0
+  Machinery and Equipment Repair and Maintenance: 55000.0
+  Malt Manufacturing: 100000.0
+  Manufacturing of Measurement Devices, Displays, and Controls: 25000.0
+  Marinas: 5000.0
+  Marketing Consulting Services: 90000.0
+  Marketing Research and Public Opinion Polling: 500000.0
+  Masonry Contractors: 150000.0
+  Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing: 27500.0
+  Meat Markets: 120000.0
+  Meat and Meat Product Merchant Wholesalers: 1000000.0
+  Media Buying Agencies: 3000000.0
+  Media Representatives: 10000.0
+  Medical Laboratories: 82500.0
+  Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers: 1750000.0
+  Medicinal and Botanical Manufacturing: 225000.0
+  Men's Clothing Stores: 300000.0
+  Men's and Boys' Clothing and Furnishings Merchant Wholesalers: 250000.0
+  "Men\u0102\x86s and Boys\u0102\x86 Cut and Sew Apparel Manufacturing": 800000.0
+  Metal Household Furniture Manufacturing: 147500.0
+  Metal Window and Door Manufacturing: 150000.0
+  Miscellaneous Intermediation: 100000.0
+  Mobile Food Services: 49500.0
+  Mortgage and Nonmortgage Loan Brokers: 340000.0
+  Motion Picture and Video Production: 40000.0
+  Motor Vehicle Body Manufacturing: 100000.0
+  Motor Vehicle Parts (Used) Merchant Wholesalers: 75000.0
+  Motor Vehicle Supplies and New Parts Merchant Wholesalers: 12000.0
+  Motor Vehicle Towing: 58000.0
+  Museums: 100000.0
+  Musical Groups and Artists: 75000.0
+  Musical Instrument Manufacturing: 250000.0
+  Musical Instrument and Supplies Stores: 30000.0
+  Nail Salons: 100000.0
+  Navigation and Guidance System and Instrument Manufacturing: 300000.0
+  New Housing For-Sale Builders: 150000.0
+  New Multifamily Housing Construction (except For-Sale Builders): 67000.0
+  New Single-Family Housing Construction (except For-Sale Builders): 80000.0
+  News Dealers and Newsstands: 250000.0
+  Nonresidential Property Managers: 62500.0
+  Nonupholstered Wood Household Furniture Manufacturing: 60000.0
+  Nursery, Garden Center, and Farm Supply Stores: 70000.0
+  Office Administrative Services: 70000.0
+  Office Equipment Merchant Wholesalers: 1075000.0
+  Offices of All Other Miscellaneous Health Practitioners: 125000.0
+  Offices of Certified Public Accountants: 100000.0
+  Offices of Chiropractors: 75000.0
+  Offices of Dentists: 300000.0
+  Offices of Lawyers: 100000.0
+  Offices of Mental Health Practitioners (except Physicians): 50000.0
+  Offices of Notaries: 10000.0
+  Offices of Physical, Occupational and Speech Therapists, and Audiologists: 67500.0
+  Offices of Physicians (except Mental Health Specialists): 80000.0
+  Offices of Physicians, Mental Health Specialists: 150000.0
+  Offices of Podiatrists: 100000.0
+  Offices of Real Estate Agents and Brokers: 62500.0
+  Offices of Real Estate Appraisers: 80000.0
+  Ophthalmic Goods Merchant Wholesalers: 1100000.0
+  Ornamental and Architectural Metal Work Manufacturing: 100000.0
+  Other Accounting Services: 35000.0
+  Other Activities Related to Real Estate: 110000.0
+  Other Automotive Mechanical and Electrical Repair and Maintenance: 55000.0
+  Other Building Equipment Contractors: 57500.0
+  Other Building Finishing Contractors: 65000.0
+  Other Building Material Dealers: 200000.0
+  Other Business Service Centers (including Copy Shops): 250000.0
+  Other Chemical and Allied Products Merchant Wholesalers: 65000.0
+  Other Clothing Stores: 80000.0
+  Other Commercial and Service Industry Machinery Manufacturing: 96000.0
+  Other Community Housing Services: 500000.0
+  Other Computer Related Services: 150000.0
+  Other Cut and Sew Apparel Manufacturing: 200000.0
+  Other Direct Selling Establishments: 10000.0
+  Other Electronic Parts and Equipment Merchant Wholesalers: 175000.0
+  Other Electronic and Precision Equipment Repair and Maintenance: 47500.0
+  Other Financial Vehicles: 0.0
+  Other Foundation, Structure, and Building Exterior Contractors: 70000.0
+  Other Gambling Industries: 120000.0
+  Other Gasoline Stations: 200000.0
+  Other Grantmaking and Giving Services: 50000.0
+  Other Grocery and Related Products Merchant Wholesalers: 77500.0
+  Other Heavy and Civil Engineering Construction: 325000.0
+  Other Individual and Family Services: 50000.0
+  Other Lighting Equipment Manufacturing: 80000.0
+  Other Management Consulting Services: 100000.0
+  Other Metal Container Manufacturing: 450000.0
+  Other Miscellaneous Durable Goods Merchant Wholesalers: 500000.0
+  Other Motion Picture and Video Industries: 230000.0
+  Other Nonscheduled Air Transportation: 2500000.0
+  Other Paperboard Container Manufacturing: 500000.0
+  Other Performing Arts Companies: 0.0
+  Other Personal Care Services: 50000.0
+  Other Personal and Household Goods Repair and Maintenance: 40000.0
+  Other Professional Equipment and Supplies Merchant Wholesalers: 80000.0
+  Other Scientific and Technical Consulting Services: 110000.0
+  Other Services Related to Advertising: 35000.0
+  Other Services to Buildings and Dwellings: 30000.0
+  Other Snack Food Manufacturing: 200000.0
+  Other Social Advocacy Organizations: 62500.0
+  Other Specialized Design Services: 330000.0
+  Other Spectator Sports: 22000.0
+  Other Support Activities for Road Transportation: 46500.0
+  Other Technical and Trade Schools: 30000.0
+  Other Warehousing and Storage: 10000.0
+  Other Waste Collection: 94500.0
+  Outpatient Mental Health and Substance Abuse Centers: 100000.0
+  Packaged Frozen Food Merchant Wholesalers: 362500.0
+  Packaging and Labeling Services: 100000.0
+  Painting and Wall Covering Contractors: 50000.0
+  Parking Lots and Garages: 110500.0
+  Passenger Car Rental: 125000.0
+  Payroll Services: 100000.0
+  Perishable Prepared Food Manufacturing: 20000.0
+  Pet Care (except Veterinary) Services: 50000.0
+  Pet and Pet Supplies Stores: 85000.0
+  Pharmacies and Drug Stores: 275000.0
+  Photofinishing Laboratories (except One-Hour): 15000.0
+  Photography Studios, Portrait: 25000.0
+  Plastics Bottle Manufacturing: 425000.0
+  Plastics Material and Resin Manufacturing: 325000.0
+  Plastics Plumbing Fixture Manufacturing: 15000.0
+  Plate Work Manufacturing: 20000.0
+  Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers: 75000.0
+  Plumbing, Heating, and Air-Conditioning Contractors: 70000.0
+  Political Organizations: 1255000.0
+  Poured Concrete Foundation and Structure Contractors: 112500.0
+  Power and Communication Line and Related Structures Construction: 80000.0
+  Prefabricated Wood Building Manufacturing: 30000.0
+  Printed Circuit Assembly (Electronic Assembly) Manufacturing: 500000.0
+  Printing and Writing Paper Merchant Wholesalers: 300000.0
+  Private Households: 50000.0
+  Process, Physical Distribution, and Logistics Consulting Services: 147000.0
+  Professional Employer Organizations: 500000.0
+  Professional Organizations: 737500.0
+  Professional and Management Development Training: 200000.0
+  Promoters of Performing Arts, Sports, and Similar Events with Facilities: 50000.0
+  Promoters of Performing Arts, Sports, and Similar Events without Facilities: 14500.0
+  Public Relations Agencies: 775000.0
+  Recreational Goods Rental: 10015000.0
+  Recreational and Vacation Camps (except Campgrounds): 10000.0
+  Recyclable Material Merchant Wholesalers: 25000.0
+  Religious Organizations: 25000.0
+  Remediation Services: 100000.0
+  Research and Development (other than Biotechnology): 20000.0
+  Research and Development in Biotechnology: 35000.0
+  Residential Electric Lighting Fixture Manufacturing: 150000.0
+  Residential Property Managers: 100000.0
+  Residential Remodelers: 50000.0
+  Retail Bakeries: 75000.0
+  Reupholstery and Furniture Repair: 35000.0
+  Roofing Contractors: 100000.0
+  Sales Financing: 56000.0
+  Satellite Telecommunications: 40000.0
+  Saw Blade and Handtool Manufacturing: 200000.0
+  Sawmill, Woodworking, and Paper Machinery Manufacturing: 20000.0
+  Security Guards and Patrol Services: 50000.0
+  Security Systems Services (except Locksmiths): 150000.0
+  Septic Tank and Related Services: 15000.0
+  Service Establishment Equipment and Supplies Merchant Wholesalers: 45000.0
+  Services for the Elderly and Persons with Disabilities: 50000.0
+  Sewing, Needlework, and Piece Goods Stores: 25000.0
+  Sheep Farming: 150000.0
+  Sheet Metal Work Manufacturing: 350000.0
+  Shoe Stores: 100000.0
+  Showcase, Partition, Shelving, and Locker Manufacturing: 60000.0
+  Siding Contractors: 80000.0
+  Sign Manufacturing: 80000.0
+  Site Preparation Contractors: 60000.0
+  Snack and Nonalcoholic Beverage Bars: 62500.0
+  Soap and Other Detergent Manufacturing: 62500.0
+  Software Publishers: 300000.0
+  Software and Other Prerecorded Compact Disc, Tape, and Record Reproducing: 200000.0
+  Soil Preparation, Planting, and Cultivating: 55000.0
+  Solid Waste Collection: 90000.0
+  Sound Recording Studios: 25000.0
+  Specialized Freight (except Used Goods) Trucking, Local: 80000.0
+  Specialized Freight (except Used Goods) Trucking, Long-Distance: 100000.0
+  Specialty (except Psychiatric and Substance Abuse) Hospitals: 38500.0
+  Sporting Goods Stores: 65000.0
+  Sporting and Recreational Goods and Supplies Merchant Wholesalers: 250000.0
+  Sports Teams and Clubs: 50000.0
+  Sports and Recreation Instruction: 12500.0
+  Stationery and Office Supplies Merchant Wholesalers: 50000.0
+  Steel Foundries (except Investment): 25000.0
+  Structural Steel and Precast Concrete Contractors: 60000.0
+  Supermarkets and Other Grocery (except Convenience) Stores: 225000.0
+  Surface Active Agent Manufacturing: 1500000.0
+  Surveying and Mapping (except Geophysical) Services: 150000.0
+  Tax Preparation Services: 62500.0
+  Telemarketing Bureaus and Other Contact Centers: 150000.0
+  Teleproduction and Other Postproduction Services: 65000.0
+  Television Broadcasting: 75000.0
+  Temporary Help Services: 250000.0
+  Testing Laboratories: 50000.0
+  Theater Companies and Dinner Theaters: 19000.0
+  Tile and Terrazzo Contractors: 60000.0
+  Tire Dealers: 70000.0
+  Tire and Tube Merchant Wholesalers: 20000000.0
+  Title Abstract and Settlement Offices: 47500.0
+  Tobacco Stores: 137500.0
+  Toilet Preparation Manufacturing: 40000.0
+  Tour Operators: 110000.0
+  Toy and Hobby Goods and Supplies Merchant Wholesalers: 150000.0
+  Translation and Interpretation Services: 80000.0
+  Travel Agencies: 50000.0
+  Truck Trailer Manufacturing: 50000.0
+  Trust, Fiduciary, and Custody Activities: 50000.0
+  Unknown: 57500.0
+  Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing: 100000.0
+  Upholstered Household Furniture Manufacturing: 100000.0
+  Used Household and Office Goods Moving: 50000.0
+  Used Merchandise Stores: 50000.0
+  Vending Machine Operators: 20000.0
+  Veterinary Services: 2500.0
+  Vocational Rehabilitation Services: 72000.0
+  Voluntary Health Organizations: 47000.0
+  Water and Sewer Line and Related Structures Construction: 70000.0
+  Welding and Soldering Equipment Manufacturing: 100000.0
+  Window Treatment Stores: 20000.0
+  Wine and Distilled Alcoholic Beverage Merchant Wholesalers: 190000.0
+  Wineries: 40000.0
+  Wired Telecommunications Carriers: 600000.0
+  Wireless Telecommunications Carriers (except Satellite): 50000.0
+  Women's Clothing Stores: 47500.0
+  Women's Handbag and Purse Manufacturing: 152500.0
+  Women's, Children's, and Infants' Clothing and Accessories Merchant Wholesalers: 125000.0
+  "Women\u0102\x86s, Girls\u0102\x86, and Infants\u0102\x86 Cut and Sew Apparel Manufacturing": 900000.0
+  Wood Container and Pallet Manufacturing: 900000.0
+  Wood Kitchen Cabinet and Countertop Manufacturing: 150000.0
+  Wood Office Furniture Manufacturing: 25000.0
+  Wood Preservation: 80000.0
+  Wood Window and Door Manufacturing: 100000.0
