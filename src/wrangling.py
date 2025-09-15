@@ -6,6 +6,10 @@ from scipy.stats import skew
 import json
 import yaml
 from typing import Dict, Any, Optional
+from utils import detect_base_path
+
+    
+
 
 
 def load_config(config_path: str) -> Dict[str, Any]:
@@ -42,7 +46,7 @@ def create_quote_aggregations(quotes_df: pd.DataFrame, has_convert: bool = True)
         'premium': ['sum', 'mean', 'min', 'max', lambda x: x.max() - x.min(),lambda x: x.quantile(0.75) - x.quantile(0.25)],
         'carrier_id': lambda x: x.nunique() / len(x),  # carrier_diversity
     }
-    
+
     quotes_agg = quotes_df.groupby("account_uuid").agg(agg_dict)
     
     # Aplanar nombres de columnas
@@ -254,7 +258,8 @@ def process_dataset(config: Dict, dataset_name: str, encoding_stats: Optional[Di
     Returns:
         Tuple with DataFrame processed and encoding stats.
     """
-    BASE_DIR = Path.cwd().parent
+    # CAMBIO: Usar función de detección en lugar de Path.cwd().parent
+    BASE_DIR = detect_base_path()
     data_path = BASE_DIR / config.get('data_dir', 'data')
     
     dataset_config = config['datasets'][dataset_name]
@@ -302,20 +307,33 @@ def main():
                        help='Path of the encoding stats (default: data/encoding_stats.json)')
     
     args = parser.parse_args()
-    
+
     try:
-        # Cargar configuración
-        config = load_config(args.config)
+
+        # CAMBIO: Usar detección de base path
+        base_path = detect_base_path()
         
+        config_path = Path(args.config)
+    
+        # Cargar configuración
+        if not config_path.is_absolute():
+                    # Si no es absoluta, buscar desde base_path/src
+                    if (base_path / 'src' / args.config).exists():
+                        config_path = base_path / 'src' / args.config
+                    elif not config_path.exists():
+                        config_path = base_path / args.config
+                
+        config = load_config(str(config_path))
+
         # Determinar ruta de encoding_stats
         if args.encoding_stats_path:
             encoding_stats_path = args.encoding_stats_path
         else:
-            base_path = Path(config.get('base_dir', '.'))
-            data_path = base_path / config.get('config_dir', 'config')
-            encoding_stats_path = str(data_path / 'encoding_stats.json')
-            print(encoding_stats_path)
-        
+            # Construir ruta basada en el entorno
+            config_dir = base_path / 'src' / 'config'
+            config_dir.mkdir(parents=True, exist_ok=True)
+            encoding_stats_path = str(config_dir / 'encoding_stats.json')  # Esta debería ser la ruta completa
+                
         encoding_stats = None  # Variable para almacenar stats de train
         
         if args.dataset:

@@ -19,33 +19,39 @@ services:
 # Airflow Service
 
   airflow:
-    image: apache/airflow:2.7.3
-    container_name: airflow
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./airflow/dags:/opt/airflow/dags
-      - ./model:/opt/airflow/model
-    environment:
-      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
-      - AIRFLOW__CORE__LOAD_EXAMPLES=false
-      - AIRFLOW__CORE__FERNET_KEY=TluxwedoQUGgy0QOd3QXOVMoWhSrBWDNtmOWpPHxuaU=
-      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////tmp/airflow.db
-      - _AIRFLOW_DB_UPGRADE=true
-      - _AIRFLOW_DB_INIT=true
-      - _AIRFLOW_WWW_USER_CREATE=true  
-      - _AIRFLOW_WWW_USER_USERNAME=admin
-      - _AIRFLOW_WWW_USER_PASSWORD=admin
-    networks:
-      - ml-network
-    depends_on:
-      - api
-    # ✅ Ejecutar webserver Y scheduler
-    command: >
-      bash -c "
-      airflow scheduler &
-      airflow webserver
-      "
+      build:
+        context: .
+        dockerfile: ./airflow/Dockerfile  # Tu Dockerfile personalizado
+      container_name: airflow
+      user: "50000"
+      ports:
+        - "8080:8080"
+      volumes:
+        - ./airflow/dags:/opt/airflow/dags:rw
+        - ./model:/opt/airflow/model:rw
+        - ./data:/opt/airflow/data:rw
+        - ./src:/opt/airflow/src:rw
+      environment:
+        - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+        - AIRFLOW__CORE__LOAD_EXAMPLES=false
+        - AIRFLOW__CORE__FERNET_KEY=TluxwedoQUGgy0QOd3QXOVMoWhSrBWDNtmOWpPHxuaU=
+        - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////tmp/airflow.db
+        - _AIRFLOW_DB_UPGRADE=true
+        - _AIRFLOW_DB_INIT=true
+        - _AIRFLOW_WWW_USER_CREATE=true  
+        - _AIRFLOW_WWW_USER_USERNAME=admin
+        - _AIRFLOW_WWW_USER_PASSWORD=admin
+        - AIRFLOW_UID=50000  # ← Añade esto
+        - AIRFLOW_GID=0      # ← Añade esto
+      networks:
+        - ml-network
+      depends_on:
+        - api
+      command: >
+        bash -c "
+        airflow scheduler &
+        airflow webserver
+        "
       
 networks:
   ml-network:

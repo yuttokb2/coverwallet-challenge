@@ -6,6 +6,8 @@ from pathlib import Path
 import json
 import yaml
 from typing import Dict, Any
+from utils import detect_base_path
+
 
 
 def load_config(config_path: str) -> Dict[str, Any]:
@@ -145,7 +147,8 @@ def process_dataset(config: Dict, dataset_name: str) -> pd.DataFrame:
     Returns:
         Processed DataFrame
     """
-    BASE_DIR = Path.cwd().parent
+    # CAMBIO: Usar función de detección en lugar de Path.cwd().parent
+    BASE_DIR = detect_base_path()
     data_path = BASE_DIR / config.get('data_dir', 'data')
     
     dataset_config = config['datasets'][dataset_name]
@@ -201,10 +204,22 @@ def main():
                        help='Specific dataset to process (train/test). If not specified, process both.')
     
     args = parser.parse_args()
-    
+
     try:
-        # Cargar configuración
-        config = load_config(args.config)
+        # CAMBIO: Manejar ruta de config de forma inteligente
+        base_path = detect_base_path()
+        
+        # Inicializar config_path desde el argumento
+        config_path = Path(args.config)
+
+        if not config_path.is_absolute():
+            # Si no es absoluta, buscar desde base_path/src
+            if (base_path / 'src' / args.config).exists():
+                config_path = base_path / 'src' / args.config
+            elif not config_path.exists():
+                config_path = base_path / args.config
+
+        config = load_config(str(config_path))
         
         if args.dataset:
             # Procesar dataset específico

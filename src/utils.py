@@ -70,3 +70,22 @@ def select_features_for_model(features_df, target_column=None):
     model_features = [col for col in numeric_cols if col not in exclude_cols]
     
     return model_features
+
+def detect_base_path():
+    """Detecta automáticamente el directorio base según el entorno."""
+    import os
+    current_cwd = Path.cwd()
+    
+    # Detectar si estamos en Airflow
+    if '/opt/airflow' in str(current_cwd) or os.path.exists('/opt/airflow'):
+        return Path('/opt/airflow')
+    else:
+        # En local: buscar directorio que contiene 'src' o 'data'
+        current = Path(__file__).resolve()
+        while current != current.parent:
+            if (current / 'src').exists() or (current / 'data').exists():
+                return current
+            current = current.parent
+        # Fallback
+        return Path.cwd()
+    

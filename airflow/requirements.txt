@@ -1,0 +1,12 @@
+# Dependencias core para ML pipeline
+pandas==2.3.2
+numpy==2.3.3
+scikit-learn==1.7.2
+xgboost==3.0.5
+joblib==1.5.2
+pyyaml==6.0.2
+lightgbm==4.6.0
+# Dependencias adicionales que podrías necesitar
+scipy==1.16.2
+matplotlib==3.10.6
+seaborn==0.13.2
