@@ -12,7 +12,7 @@ A complete ML solution for predicting account values using an XGBoost model, orc
 This project tackles the CoverWallet data science challenge, which consists of predicting the account value of a given account using customer application data and initial quotes. The solution includes:
 
 - **Data Processing Pipeline**: Feature engineering and preprocessing
-- **Machine Learning Model**: XGBoost model achieving 95.06% R²
+- **Machine Learning Model**: XGBoost model achieving 87.40% R²
 - **API Service**: FastAPI REST API for model serving
 - **Orchestration**: Apache Airflow for workflow management
 - **Containerization**: Docker and Docker Compose setup
@@ -25,7 +25,7 @@ challenge_coverwallet/
 │   └── app/
 │       ├── main.py              # FastAPI application
 │       ├── requirements.txt     # API dependencies
-│       └── Dockerfile          # API container setup
+│       └── Dockerfile           # API container setup
 ├── airflow/
 │   ├── dags/
 │   │   └── test_dag.py         # Airflow DAGs
@@ -43,10 +43,11 @@ challenge_coverwallet/
 ├── model/
 │   └── xgboost_model.joblib    # Trained XGBoost model
 ├── notebooks/
-│   ├── 1_eda.ipynb            # Exploratory Data Analysis
+│   ├── 1_eda.ipynb             # Exploratory Data Analysis
 │   ├── 2_preprocessing.ipynb   # Data preprocessing
-│   ├── 3_train.ipynb          # Model training
-│   └── 4_analysis_results.ipynb # Results analysis
+│   ├── 3_wrangling.ipynb       # Data wrangling
+│   ├── 4_train.ipynb           # Model training
+│   └── 5_analysis_results.ipynb # Results analysis
 ├── src/
 │   ├── config/                 # Configuration files
 │   ├── preprocessing_data.py   # Data preprocessing pipeline
@@ -54,6 +55,7 @@ challenge_coverwallet/
 │   └── utils.py               # Utility functions
 ├── docker-compose.yml          # Multi-service orchestration
 ├── pyproject.toml             # Poetry dependencies
+├── QUICK_COMMANDS.md          # Useful commands
 └── README.md                  # This file
 ```
 
@@ -80,6 +82,21 @@ docker-compose up --build
 # Or run in detached mode
 docker-compose up -d --build
 ```
+
+```bash
+# To grant permission to airflow to write the output in the model folder
+bash fix-permissions.sh
+```
+
+```bash
+# To stop the process
+docker-compose stop
+
+docker-compose down
+# Revert permissions to the current user
+bash revert_permissions.sh
+```
+
 
 **Services will be available at:**
 - 🌐 **FastAPI**: http://localhost:8000
@@ -126,9 +143,14 @@ Orchestrates the ML pipeline and workflow management.
 
 **Airflow Configuration:**
 - **Executor**: SequentialExecutor
-- **Database**: SQLite (development)
 - **Default User**: admin/admin
 - **Fernet Key**: Provided for encryption
+
+```bash
+#### You should this chunk in the terminal to get your own fernet key and change it in the docker-compose file inside AIRFLOW__CORE__FERNET_KEY.
+run openssl rand -base64 32
+```
+
 
 **Access Airflow:**
 1. Navigate to http://localhost:8080
@@ -184,27 +206,24 @@ else:
 ## 📊 Model Information
 
 ### Performance Metrics
-- **RMSE**: 663.80
-- **MAE**: 161.48
-- **R²**: 0.9506 (95.06% variance explained)
+- **RMSE**: 1272.19
+- **MAE**: 429.03
+- **R²**: 0.8740 (87.40% variance explained)
 
 ### Required Features (37 total)
 The model requires exactly 37 features in a specific order:
 
 ```python
-feature_names = [
-    'log_total_payroll', 'year_established', 'total_payroll', 'product_concentration',
-    'state_premium_sum_encoded', 'subindustry_sum_premium_encoded', 'carrier_concentration',
-    'business_structure_revenue_encoded', 'premium_per_employee', 'industry_revenue_encoded',
-    'num_quotes', 'revenue_x_payroll', 'log_annual_revenue', 'premium_to_revenue_ratio',
-    'total_quotes', 'premium_ratio_max_avg', 'annual_revenue', 'max_x_nquotes',
-    'state_revenue_encoded', 'num_employees', 'business_structure_premium_sum_encoded',
-    'industry_sum_premium_encoded', 'num_products_requested', 'iqr_premium',
-    'premium_per_revenue', 'avg_x_nproducts', 'subindustry_revenue_encoded',
-    'premium_per_quote', 'max_premium', 'quotes_per_million_revenue', 'avg_premium',
-    'sum_premium', 'carrier_diversity', 'quotes_per_employee', 'min_premium',
-    'num_carriers', 'revenue_per_employee'
-]
+feature_names = ['log_total_payroll', 'year_established', 'total_payroll', 'product_concentration', 
+                'state_premium_sum_encoded', 'subindustry_sum_premium_encoded', 'carrier_concentration',
+                'business_structure_revenue_encoded', 'premium_per_employee',
+                'industry_revenue_encoded', 'num_quotes', 'revenue_x_payroll', 'log_annual_revenue', 
+                'premium_to_revenue_ratio', 'total_quotes', 'premium_ratio_max_avg', 'annual_revenue', 
+                'max_x_nquotes', 'state_revenue_encoded', 'num_employees', 'business_structure_premium_sum_encoded',
+                'industry_sum_premium_encoded', 'num_products_requested', 'iqr_premium', 'premium_per_revenue', 
+                'premium_range', 'avg_x_nproducts', 'premium_per_quote', 'subindustry_revenue_encoded', 'max_premium', 
+                'quotes_per_million_revenue', 'avg_premium', 'sum_premium', 'carrier_diversity', 
+                'min_premium', 'num_carriers', 'quotes_per_employee', 'revenue_per_employee']
 ```
 
 ### Target Variable
@@ -259,19 +278,6 @@ poetry run python src/detect.py --model-path model/xgboost_model.joblib --featur
 - `data/predictions.csv` - Final predictions (account_uuid, account_value)
 
 
-
-### Running Notebooks
-```bash
-# Start Jupyter
-poetry run jupyter lab
-
-# Navigate to notebooks/ directory
-# Available notebooks:
-# - 1_eda.ipynb: Exploratory Data Analysis
-# - 2_preprocessing.ipynb: Data preprocessing
-# - 3_train.ipynb: Model training
-# - 4_analysis_results.ipynb: Results analysis
-```
 
 ### Data Processing Pipeline
 ```bash
@@ -362,23 +368,9 @@ docker-compose restart airflow
 - **Disk Space**: 2GB for containers and data
 - **CPU**: 2+ cores recommended
 
-## 📈 Performance Tuning
 
-### API Performance
-- **Response Time**: < 100ms for predictions
-- **Concurrency**: Supports multiple simultaneous requests
-- **Memory Usage**: ~200MB per container
 
-### Scaling Options
-```bash
-# Scale API service
-docker-compose up --scale api=3
-
-# Use production WSGI server
-docker run -p 8000:8000 coverwallet-api gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker
-```
-
-## 📚 Additional Resources
+## Additional Resources
 
 ### Documentation
 - **FastAPI Docs**: http://localhost:8000/docs
@@ -391,19 +383,7 @@ docker run -p 8000:8000 coverwallet-api gunicorn main:app -w 4 -k uvicorn.worker
 - `docker-compose.yml`: Multi-service container orchestration
 - `test_payload.json`: Sample payload for API testing
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is part of the CoverWallet Data Science Challenge.
-
----
 
 **Challenge**: CoverWallet Data Science Challenge  
 **Last Updated**: September 2025
