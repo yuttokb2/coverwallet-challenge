@@ -73,7 +73,7 @@ This is the fastest way to get everything running:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/yuttokb2/coverwallet-challenge
 cd challenge_coverwallet
 
 # Build and start all services
