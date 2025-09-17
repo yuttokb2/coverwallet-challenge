@@ -375,10 +375,8 @@ docker-compose restart airflow
 ### Documentation
 - **FastAPI Docs**: http://localhost:8000/docs
 - **Airflow Docs**: http://localhost:8080
-- **Model Analysis**: See `findings.md` for detailed insights
 
 ### Key Files
-- `findings.md`: Detailed model analysis and insights
 - `pyproject.toml`: Poetry dependency management
 - `docker-compose.yml`: Multi-service container orchestration
 - `test_payload.json`: Sample payload for API testing
