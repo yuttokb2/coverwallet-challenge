@@ -60,14 +60,3 @@ sudo lsof -ti:8000 | xargs kill -9
 sudo lsof -ti:8080 | xargs kill -9
 ```
 
-## 📊 Development
-```bash
-# Start Jupyter
-poetry run jupyter lab
-
-# Run notebooks in order:
-# 1. notebooks/1_eda.ipynb
-# 2. notebooks/2_preprocessing.ipynb  
-# 3. notebooks/3_train.ipynb
-# 4. notebooks/4_analysis_results.ipynb
-```
